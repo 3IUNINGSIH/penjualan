@@ -1,3 +1,8 @@
 {
-    "git.autofetch": "all"
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.automationShell.windows": "C:\\Program Files\\Git\\git-bash.exe",
+    "scm.alwaysShowActions": true,
+    "scm.repositories.visible": 9,
+    "scm.providerCountBadge": "auto",
+    "git.useForcePushWithLease": false
 }
