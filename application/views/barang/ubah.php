@@ -7,7 +7,7 @@
                 </div>
             <?php endif; ?>
             <form action="" method="post">
-                <input type="hidden" name="id_barang" id="nama_barang" value='<?= $barang['id_barang']; ?>'>
+                <input type="hidden" name="id_barang" id="nama_barang" value='<?=$barang['id_barang']; ?>'>
                 </div>
                 <div class="mb-3">
                     <label for="nama_barang" class="form-label">nama barang</label>

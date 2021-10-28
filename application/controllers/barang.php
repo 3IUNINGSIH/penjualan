@@ -18,6 +18,8 @@ class barang extends CI_Controller{
              $data['barang']=$this->barang_model->caridatabarang();
          }
         $this->load->view('templates/header',$data);
+        $this->load->view('templates/sidebar',);
+        $this->load->view('templates/topbar',);
         $this->load->view('barang/index');
         $this->load->view('templates/footer');
     }
@@ -33,6 +35,8 @@ class barang extends CI_Controller{
         if ($this->form_validation->run() == FALSE)
                 {
                     $this->load->view('templates/header',$data);
+                    $this->load->view('templates/sidebar',);
+                    $this->load->view('templates/topbar',);
                     $this->load->view('barang/tambah');
                     $this->load->view('templates/footer');
                 }
@@ -55,6 +59,8 @@ class barang extends CI_Controller{
         $data['judul']='detail barang';
         $data['barang']=$this->barang_model->getbarangbyid($id);
        $this->load->view('templates/header',$data);
+       $this->load->view('templates/sidebar',);
+       $this->load->view('templates/topbar',);
        $this->load->view('barang/detail',$data);
        $this->load->view('templates/footer');
    }
@@ -73,6 +79,8 @@ class barang extends CI_Controller{
         if ($this->form_validation->run() == FALSE)
                 {
                     $this->load->view('templates/header',$data);
+                    $this->load->view('templates/sidebar',);
+                    $this->load->view('templates/topbar',);
                     $this->load->view('barang/ubah',$data);
                     $this->load->view('templates/footer');
                 }

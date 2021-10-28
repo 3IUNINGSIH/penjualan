@@ -13,6 +13,8 @@ class homepage extends CI_Controller{
     {
         $data['judul']='toko penjual';
         $this->load->view('templates/header',$data);
+        $this->load->view('templates/sidebar',);
+        $this->load->view('templates/topbar',);
         $this->load->view('home/index');
         $this->load->view('templates/footer');
     }
